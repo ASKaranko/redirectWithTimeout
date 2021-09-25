@@ -8,5 +8,5 @@ btn.addEventListener('click', (event) => {
 });
 
 function redirectOnTimeout() {
-    location.href = link + preland;
+    location.href = link + 'preland=' +preland;
 }
