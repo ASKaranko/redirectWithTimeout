@@ -1,6 +1,6 @@
 const urlHrefSc = window.location.href;
 const prelandSc = urlHrefSc.replace(/^\S*\.\w*\//, '').split('?')[0].replace(/\/$/, '').replace(/\//g, '_');
-console.log(preland);
+
 ! function ()
 {
         var t;
